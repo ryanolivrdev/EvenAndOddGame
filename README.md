@@ -27,7 +27,6 @@ Gravação do trabalho disponivel no [Youtube]( ) :clapper:
 - A pontuação deve ser atualizada a cada rodada rodada
 - O programa deve exibir a página do campeão, uma pagina com imagem e texto de congratulações
 - Na pagina do campeão deve exibir o nome do vencedor
-- Adicionar vídeo do youtube
 - GANHA a melhor de 5 pontos.
 
 *ENTREGA*
