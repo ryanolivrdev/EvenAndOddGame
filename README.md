@@ -1,4 +1,4 @@
-# Sobre Mim 🌍:zap:
+# Par ou impar 🌍:zap:
 
 Trabalho do primeiro semestre do curso de Ciência da Computação da matéria de **Programação de Software** da Faculdade [Cesupa](cesupa.br)
 
