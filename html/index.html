@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/main.js" defer></script>
-    <title>Even And Odd</title>
+    <title>Odds And Evens</title>
   </head>
   <body>
     <header class="header">
-      <a href="/html/index.html">Even And Odd</a>
+      <a href="/html/index.html">Odds And Evens</a>
       <nav>
         <ul class="menu">
           <li><a href="/">New Game</a></li>
@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <section id="sectionHomeContainer" class="sectionHomeContainer">
+      <section class="sectionHomeContainer">
         <div class="container id"></div>
         <h3>Welcome To The Game</h3>
         <p>Enter player 1 name</p>
@@ -30,18 +30,34 @@
         <button id="startButton">Start</button>
       </section>
 
-      <section id="game" class="game">
-        <div class="scoreboard">
+      <section class="sectionGameContainer">
+        <div class="divScoreboardContainer">
           <div>
-          <h3 id="nameplayer1">Player 1:</h3>
+            <h3 id="nameplayer1">Player 1:</h3>
             <p>Points: <span id="points_player1">0</span></p>
           </div>
           <div>
-              <h3 id="nameplayer2">Player 2:</h3>
+            <h3 id="nameplayer2">Player 2:</h3>
             <p>Points: <span id="points_player2">0</span></p>
           </div>
-        </section>
+        </div>
+        <div class="inputsGameContainer">
+          <div>
+            <p>Make Your Choice</p>
+            <select>
+              <option value="Odds">Odds</option>
+              <option value="Evens">Evens</option>
+            </select>
           </div>
+          <div>
+            <p>Opposite of player 1</p>
+          </div>
+        </div>
+        <button class="playGame">Play!</button>
+        <div class="resultsContainer">
+          <p>o jogador x venceu a rodada</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>

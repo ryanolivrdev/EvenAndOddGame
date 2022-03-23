@@ -73,13 +73,34 @@ section {
   border: none;
 }
 
-.game{
-  display: none;
+.sectionGameContainer{
+  display:none;
 }
 
-.scoreboard{
-  display:flex;
-  justify-content: space-between;
-  margin-top: -27rem;
-  gap: 20rem;
+.divScoreboardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1.2rem;
+  
+  gap: 16rem;
 }
+
+.inputsGameContainer{
+  
+  display:flex;
+  flex-direction: space-between;
+  gap: 10rem;
+}
+
+.inputsGameContainer select{
+  padding: 0.4rem;
+
+}
+
+.playGame{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
