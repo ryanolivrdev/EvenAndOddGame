@@ -54,9 +54,9 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  height: 35rem;
-  width: 40rem;
+  gap: 2rem;
+  height: 30rem;
+  width: 35rem;
   border-radius: 20px;
   margin: 0 2rem 0 2rem;
 }
@@ -104,3 +104,9 @@ section {
   border-radius: 0.5rem;
 }
 
+.resultsContainer{
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0.5rem;
+}

@@ -4,8 +4,10 @@ const player1 = document.querySelector('#inputplayer1')
 const player2 = document.querySelector('#inputplayer2')
 const nameplayer1 = document.querySelector('#nameplayer1')
 const nameplayer2 = document.querySelector('#nameplayer2')
-const choicePlayer1 = document.querySelector('#choicePlayer1')
+const results = document.querySelector('.resultsContainer')
+let round = Number(document.getElementById('round'))
 document.querySelector('#startButton').addEventListener('click', start)
+document.querySelector('.playGame').addEventListener('click', rounds)
 
 function start() {
   if (player1.value == '' || player2.value == '') {
@@ -16,5 +18,45 @@ function start() {
     game.style.display = 'flex'
     nameplayer1.innerText = player1.value
     nameplayer2.innerText = player2.value
+  }
+}
+
+function rounds() {
+  results.style.display = 'flex'
+
+  const playerChoice = Math.floor(Math.random() * 10)
+  const cpuChoice = Math.floor(Math.random() * 10)
+
+  const isEvens = (playerChoice + cpuChoice) % 2 == 0
+
+  const choice = document.getElementById('test').value
+
+  // if (isEvens) {
+  //   if (choice === 'Evens') console.log('Win 1')
+  //   else console.log('Win 2')
+  // } else {
+  //   if (choice === 'Odds') console.log('Win 1')
+  //   else console.log('Win 2')
+  // }
+
+  if (choice === 'Evens') {
+    if (isEvens === true) {
+      round.innerHTML += 1
+    } else if (isEvens === false) {
+      console.log(isEvens)
+    } else {
+      console.log('error')
+    }
+
+    // console.log(isEvens)
+  }
+  if (choice === 'Odds') {
+    if (isEvens === false) {
+      console.log(isEvens)
+    } else if (isEvens === true) {
+      console.log(isEvens)
+    } else {
+      console.log('error')
+    }
   }
 }
