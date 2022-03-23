@@ -4,6 +4,7 @@ Trabalho do primeiro semestre do curso de Ciência da Computação da matéria d
 
 Gravação do trabalho disponivel no [Youtube]( ) :clapper:
 
+Pode ser acessado por aqui! [Link do site](https://oddsandevens.netlify.app/html/ )
 
 ## Sumário :open_book:
 
