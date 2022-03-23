@@ -63,10 +63,10 @@ function rounds() {
   }
 
   if (points_player1.textContent == 3) {
+    localStorage.setItem('championsName', nameplayer1.textContent)
     location.href = '/html/champions.html'
   } else if (points_player2.textContent == 3) {
+    localStorage.setItem('championsName', nameplayer2.textContent)
     location.href = '/html/champions.html'
-  } else {
-    console.log('error 404')
   }
 }
