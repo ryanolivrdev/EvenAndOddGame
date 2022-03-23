@@ -6,8 +6,9 @@ const nameplayer1 = document.querySelector('#nameplayer1')
 const nameplayer2 = document.querySelector('#nameplayer2')
 const results = document.querySelector('.resultsContainer')
 let points_player1 = document.getElementById('points_player1')
-let points_player2 = document.getElementById('points_player1')
+let points_player2 = document.getElementById('points_player2')
 let round = document.getElementById('round')
+var wonTheRound = document.getElementById('won_the_round')
 document.querySelector('#startButton').addEventListener('click', start)
 document.querySelector('.playGame').addEventListener('click', rounds)
 
@@ -31,36 +32,41 @@ function rounds() {
 
   const isEvens = (playerChoice + cpuChoice) % 2 == 0
 
-  const choice = document.getElementById('test').value
+  const choice = document.getElementById('choices').value
 
-  // if (isEvens) {
-  //   if (choice === 'Evens') console.log('Win 1')
-  //   else console.log('Win 2')
-  // } else {
-  //   if (choice === 'Odds') console.log('Win 1')
-  //   else console.log('Win 2')
-  // }
-
-  if (choice === 'Evens') {
-    if (isEvens === true) {
+  if (choice === 'Odds') {
+    if (isEvens) {
       round.innerHTML = Number(round.innerText) + 1
       points_player1.innerHTML = Number(points_player1.innerText) + 1
-      console.log(points_player1)
-    } else if (isEvens === false) {
-      console.log(isEvens)
+      wonTheRound.innerText = `${player1.value} Won The Round`
+    } else if (!isEvens) {
+      round.innerHTML = Number(round.innerText) + 1
+      points_player2.innerHTML = Number(points_player2.innerText) + 1
+      wonTheRound.innerText = `${player2.value} Won The Round`
     } else {
       console.log('error')
     }
-
-    // console.log(isEvens) Number(points_player1.innerText)
   }
-  if (choice === 'Odds') {
-    if (isEvens === false) {
-      console.log(isEvens)
-    } else if (isEvens === true) {
-      console.log(isEvens)
+
+  if (choice === 'Evens') {
+    if (isEvens) {
+      round.innerHTML = Number(round.innerText) + 1
+      points_player1.innerHTML = Number(points_player1.innerText) + 1
+      wonTheRound.innerText = `${player1.value} Won The Round`
+    } else if (!isEvens) {
+      round.innerHTML = Number(round.innerText) + 1
+      points_player2.innerHTML = Number(points_player2.innerText) + 1
+      wonTheRound.innerText = `${player2.value} Won The Round`
     } else {
       console.log('error')
     }
+  }
+
+  if (points_player1.textContent == 3) {
+    location.href = '/html/champions.html'
+  } else if (points_player2.textContent == 3) {
+    location.href = '/html/champions.html'
+  } else {
+    console.log('error 404')
   }
 }

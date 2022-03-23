@@ -13,8 +13,8 @@
       <a href="/html/index.html">Odds And Evens</a>
       <nav>
         <ul class="menu">
-          <li><a href="/">New Game</a></li>
-          <li><a href="/">Champions</a></li>
+          <li><a href="/html/index.html">New Game</a></li>
+          <li><a href="/html/champions.html">Champions</a></li>
           <li><a href="/">Dark Mode</a></li>
         </ul>
       </nav>
@@ -44,7 +44,7 @@
         <div class="inputsGameContainer">
           <div>
             <p>Make Your Choice</p>
-            <select id="test">
+            <select id="choices">
               <option value="Odds">Odds</option>
               <option value="Evens">Evens</option>
             </select>
@@ -56,9 +56,7 @@
         <button class="playGame">Play!</button>
         <div class="resultsContainer">
           <p>Round: <span id="round">0</span></p>
-          <p>
-            o jogador <span id="nameplayer1">Player 1:</span> venceu a rodada
-          </p>
+          <p id="won_the_round"></p>
         </div>
       </section>
     </main>
